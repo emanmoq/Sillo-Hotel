@@ -1,0 +1,847 @@
+header {
+    padding: 22px 0;
+    height: 100px;
+
+}
+
+body {
+    width: 100%;
+    position: relative;
+    background: white;
+    font-size: 16px;
+    font-family: 'Cairo', sans-serif !important;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 170px;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+form {
+    margin: 0
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    transition: all .5s;
+}
+
+.btn span {
+    align-self: center;
+}
+
+.headerBtn {
+    background-color: #212D7C;
+    color: white;
+    width: 110px;
+    height: 42px;
+    margin-left: 9px;
+}
+
+.cartHeaderBtn {
+    border: 1px solid #E8E8E8;
+    width: 42px;
+    height: 42px;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+    position: relative
+}
+
+.hero:before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.heroText {
+    text-align: center;
+}
+
+.heroText h1 {
+    font-size: 4.5em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.heroText hr {
+    width: 288px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 47px;
+
+}
+
+.hero p {
+    font-size: 1.125em;
+    color: white
+}
+
+.checkSec {
+    background-color: transparent;
+    padding-bottom: 43px;
+}
+
+.checkForm {
+    background: #FFFFFF;
+    box-shadow: 0px 16px 46px rgba(0, 0, 0, 0.06);
+    border-radius: 0px 20px;
+    margin-top: -52px;
+    margin-bottom: 0;
+    height: 105px;
+    overflow: hidden;
+}
+
+.checkForm .form-group {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 22px;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.borderedFormgroup {
+    border-right: 1px solid #CACACA;
+}
+
+.checkForm label {
+    color: #808080;
+    font-size: 1.125em;
+}
+
+.datepicker {
+    margin-top: 10px;
+}
+
+.checkForm label {
+    margin-bottom: 0;
+}
+
+.checkForm .datepicker,
+.checkForm .selectric-wrapper {
+    border: 0;
+    text-align: center;
+    font-size: 1.125em;
+    color: #000000;
+    background-color: transparent;
+}
+
+.checkForm .selectric-wrapper {
+    width: 200px;
+    float: none;
+}
+
+.checkForm .datepicker::placeholder {
+    text-align: center;
+    font-size: 1.125em;
+    color: #000000;
+}
+
+.checkForm .datepicker:focus {
+    border: 0;
+    box-shadow: 0;
+    outline: 0;
+}
+
+.checkForm label i {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.checkForm .selectric-wrapper .button {
+    font-size: 14px;
+    color: black;
+    padding: 0;
+    align-self: center;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.checkForm .selectric .label {
+    font-size: 1.125em;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    align-self: center;
+    width: 120px;
+    padding: 0;
+}
+
+.checkForm .selectric {
+    display: flex;
+    justify-content: center;
+}
+
+.selectric-items li.selected {
+    display: none;
+}
+
+.selectric-items li:hover {
+    background-color: #212D7C;
+}
+
+.nopadding {
+    padding: 0;
+    margin: 0;
+}
+
+.checkBtn {
+    width: 100%;
+    height: 100%;
+    background-color: #212D7C;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 0;
+    border: 1px solid #212D7C
+}
+
+.checkBtn:hover {
+    background-color: #656c9e;
+    color: white;
+
+}
+
+.counterSec {
+    padding-top: 54px;
+    padding-bottom: 40px;
+    background-color: #FAFAFA;
+}
+
+.counter h3 {
+    color: #212D7C;
+    font-size: 3em;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.counter {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.counterBox {
+    text-align: center;
+}
+
+.counterBox span {
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #808080;
+}
+
+.mostHotelBox {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    margin-top: 143px;
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 100px;
+}
+
+.mostHotelBox h5 {
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 42px;
+    color: #000000;
+}
+
+.hotelImg {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 55%;
+    bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hotelImg img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.mostHotelBox p {
+    font-weight: 400;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.favouritRooms {
+    padding-top: 32px;
+    padding-bottom: 45px;
+}
+
+.sectionTitle h3 {
+    float: left;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 600;
+}
+
+.sectionTitle a {
+    float: right;
+    font-size: 1.25em;
+    color: #212D7C;
+    font-weight: 500;
+}
+
+.sectionTitle {
+    margin-bottom: 25px;
+}
+
+.sectionTitle i {
+    margin-left: 8px;
+}
+
+.favouritImg {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 308px;
+}
+
+.favouritImg img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.favouritBigImg {
+    height: 641px;
+}
+
+.favouritRoomDetailsBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    padding: 14px;
+
+}
+
+.roomPrice {
+    background-color: white;
+    padding: 8px 12px;
+    color: #212D7C;
+    font-weight: 600;
+    font-size: .875em;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.favouritRoomDetails {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+}
+
+.favouritRoomDetails h6 {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.favouritRoomDesc {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    display: flex;
+    height: 38px;
+    padding: 9px
+}
+
+.favouritRoomDesc span {
+    align-self: center;
+    display: flex;
+    margin-right: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+}
+
+.favouritBigImg .favouritRoomDesc span {
+    margin-right: 20px;
+}
+
+.favouritBigImg .favouritRoomDesc {
+    padding: 9px 12px
+}
+
+.favouritRoomDesc span:last-child {
+    margin-right: 0;
+
+}
+
+.favouritRoomDesc span i {
+    align-self: center;
+    font-size: 17px;
+    color: white;
+    margin-right: 6px;
+}
+
+.favouritRoomDesc span span {
+    align-self: center;
+}
+
+.smallImgMargin {
+    margin-bottom: 25px;
+}
+
+.PlacesNearby {
+    padding-top: 32px;
+    padding-bottom: 45px;
+}
+
+.PlacesNearbyDetails {
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    left: 0;
+    bottom: 0;
+    background: rgba(245, 245, 245, 1);
+    padding: 20px 18px;
+    display: flex;
+}
+
+.PlacesNearbyDetails h3,
+.PlacesNearbyDetails span {
+    align-self: center;
+
+}
+
+.PlacesNearbyDetails span {
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 23px;
+    color: #0F97AA;
+}
+
+.PlacesNearbyDetails h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+    padding-right: 24px;
+    border-right: 1px solid #CACACA;
+    margin-right: 24px;
+
+}
+
+.services,
+.ourGuset {
+    padding-top: 29px;
+    padding-bottom: 45px;
+    background: #F9F9F9;
+}
+
+.ourGuset {
+    padding-bottom: 70px;
+}
+
+.guestTitle {
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 35px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.guestCar {
+    position: relative;
+    overflow: hidden;
+}
+
+.guestBox {
+    height: 254px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 38px 14px;
+    border: 1px solid transparent
+}
+
+.guestIcon {
+    font-size: 2.25em;
+    float: right;
+    color: #212D7C;
+}
+
+.guestBox p {
+    font-size: .875em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 32px;
+    max-height: 80px;
+    overflow: hidden;
+    line-height: 16px;
+    opacity: .5;
+    font-weight: 400;
+}
+
+.guestNameDesc {
+    display: flex;
+    float: left;
+    width: 80%;
+}
+
+.guestDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clientRating {
+    margin-left: auto;
+    align-self: center;
+    float: right;
+
+}
+
+.guestImg {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    align-self: center;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.guestImg img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.guestName {
+    align-self: center;
+}
+
+.guestName h6 {
+    font-size: 1.125em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.guestName span {
+    font-size: .875em;
+    font-weight: 700;
+    opacity: .5;
+}
+
+.guestCar .owl-stage-outer,.serviceCar .owl-stage-outer {
+    overflow: visible;
+}
+
+.guestCar .owl-stage-outer .owl-item,.serviceCar .owl-stage-outer .owl-item {
+    opacity: 0;
+}
+
+.guestCar .owl-stage-outer .owl-item.active,.serviceCar .owl-stage-outer .owl-item.active {
+    opacity: 1;
+}
+
+.guestBox:hover {
+    transition: all .5s;
+}
+
+.guestBox:hover {
+    border: 1px solid var(--secondMainColor);
+    transition: all .5s;
+    margin-top: -5px;
+    box-shadow: 0 0 10px var(--box-shadow);
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.owl-dot {
+    width: 8px;
+    height: 6px;
+    margin-right: 6px;
+    background: #6A72A7;
+    border-radius: 3px;
+    transition: all .5s;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+
+}
+
+ .owl-dot.active {
+    width: 31px;
+    background-color: #212D7C;
+    transition: all .5s;
+}
+
+footer {
+    padding-top: 33px;
+    padding-bottom: 19px;
+    color: white;
+    background-color: #212D7C;
+}
+
+.footerLogo {
+    width: 232px;
+    margin-bottom: 63px;
+    height: 56px;
+
+}
+
+.footerList li {
+    margin-bottom: 33px;
+}
+
+.footerList li a {
+    font-weight: 400;
+    font-size: 1.125em;
+    color: white
+}
+
+.footerList li:hover a {
+    color: #6A72A7;
+}
+
+.footerList i {
+    margin-right: 26px;
+
+}
+
+.checkLinkmap {
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 40px;
+}
+
+.checkLinkmap:hover {
+    text-decoration: underline;
+}
+
+.footerTitle {
+    height: 56px;
+    margin-bottom: 63px;
+
+}
+
+.footerTitle h4 {
+    font-weight: 600;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.footerTitle h4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 60px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.footerLinks li {
+    width: 48%;
+    display: inline-block;
+}
+
+.subscribeBox {
+    height: 48px;
+    width: 100%;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.subscribeBox {
+    margin-bottom: 48px;
+}
+
+.subscribeBox .form-control {
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+    height: 48px;
+}
+
+.form-control::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.subscribeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #6A72A7;
+    border-radius: 0px 6px 6px 0px;
+    width: 129px;
+    z-index: 1;
+    height: 100%;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid #6A72A7
+}
+
+.subscribeBtn:hover {
+    background-color: white;
+    color: #6A72A7
+}
+
+.socialIcons li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+.socialIcons li:hover a {
+    color: #6A72A7
+}
+
+.socialIcons li i {
+    margin-right: 0;
+}
+
+.socialIcons li:last-child {
+    margin-right: 0;
+}
+
+.copy {
+    padding-top: 33px;
+    border-top: 1px solid rgba(202, 202, 202, 0.5);
+    margin-top: 29px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.servicesList li {
+    display: flex;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 28px
+}
+
+.servicesList li.active {
+    background-color: white;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.serviceIcon {
+    width: 39px;
+    margin-right: 27px;
+    align-self: center;
+}
+
+.serviceDetails {
+    align-self: center;
+}
+
+.serviceDetails h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: black
+}
+
+.serviceDetails span {
+    font-size: 1em;
+    font-weight: 500;
+    color: #808080;
+}
+.services{
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+.services .sectionTitle {
+    margin-bottom: 74px;
+}
+
+.servicesCarItem {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 80%;
+    height: 520px;
+    margin: auto;
+    margin-top:-30px
+}
+
+.servicesCarItem img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.serviceCar {
+    background-color: white;
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    height: 460px;
+}
+.serviceCar .owl-nav{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+.serviceCar.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+    background-color: transparent;
+    color:black;
+    border:0;
+    font-size: 15px;
+    position: absolute;
+    left: 18px;
+
+}
+.serviceCar.owl-carousel .owl-nav .owl-next{
+    left: auto;
+    right: 18px;
+}
