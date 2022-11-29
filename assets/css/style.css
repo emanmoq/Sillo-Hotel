@@ -65,21 +65,75 @@ form {
 .btn span {
     align-self: center;
 }
-
+.btn:focus{
+    outline: 0;
+    box-shadow: none;
+}
 .headerBtn {
     background-color: #212D7C;
     color: white;
     width: 110px;
     height: 42px;
     margin-left: 9px;
+    border:1px solid #212D7C
 }
 
+.headerBtn:hover{
+    background-color: transparent;
+    color:#212D7C
+}
 .cartHeaderBtn {
     border: 1px solid #E8E8E8;
     width: 42px;
     height: 42px;
+    COLOR:#212D7C;
+    font-size: 20px;
 }
-
+.cartHeaderBtn:hover{
+    background-color: #6A72A7;
+    color: white;
+}
+.lang{
+    position: relative;
+}
+.langBtn{
+    position: relative;
+}
+.lang .dropdown-menu{
+min-width: 20px;
+}
+.lang .dropdown-menu .dropdown-item{
+padding:0 15px
+}
+.dropdown-toggle::after{
+    margin-top:11px
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+    margin:0 20px;
+    position: relative;
+    font-size: 1em;
+    font-weight: 500;
+    color: #808080;
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
+    color:#212D7C
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link:before{
+    width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link:before{
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #212D7C;
+    bottom:0;
+    left: 0;
+    position: absolute;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
 .hero {
     background-repeat: no-repeat;
     background-size: cover;
