@@ -34,5 +34,23 @@ jQuery(function ($) {
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
 
     });
+    $(".aboutCar").owlCarousel({
+        nav: true,
+        dots: false,
+        loop: true,
+        margin:0,
+        items:1,
+        center: true,
+        navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+        responsive: {
+            0: {
+                stagePadding: 0,
+            },
+            800: {
+                stagePadding: 100,
+            }
+        }
+
+    });
 });
 

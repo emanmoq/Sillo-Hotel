@@ -65,75 +65,90 @@ form {
 .btn span {
     align-self: center;
 }
-.btn:focus{
+
+.btn:focus {
     outline: 0;
     box-shadow: none;
 }
+
 .headerBtn {
     background-color: #212D7C;
     color: white;
     width: 110px;
     height: 42px;
     margin-left: 9px;
-    border:1px solid #212D7C
+    border: 1px solid #212D7C
 }
 
-.headerBtn:hover{
+.headerBtn:hover {
     background-color: transparent;
-    color:#212D7C
+    color: #212D7C
 }
+
 .cartHeaderBtn {
     border: 1px solid #E8E8E8;
     width: 42px;
     height: 42px;
-    COLOR:#212D7C;
+    COLOR: #212D7C;
     font-size: 20px;
 }
-.cartHeaderBtn:hover{
+
+.cartHeaderBtn:hover {
     background-color: #6A72A7;
     color: white;
 }
-.lang{
+
+.lang {
     position: relative;
 }
-.langBtn{
+
+.langBtn {
     position: relative;
 }
-.lang .dropdown-menu{
-min-width: 20px;
+
+.lang .dropdown-menu {
+    min-width: 20px;
 }
-.lang .dropdown-menu .dropdown-item{
-padding:0 15px
+
+.lang .dropdown-menu .dropdown-item {
+    padding: 0 15px
 }
-.dropdown-toggle::after{
-    margin-top:11px
+
+.dropdown-toggle::after {
+    margin-top: 11px
 }
-.navbar-expand-lg .navbar-nav .nav-link{
+
+.navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
-    margin:0 20px;
+    margin: 0 20px;
     position: relative;
     font-size: 1em;
     font-weight: 500;
     color: #808080;
 }
-.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
-    color:#212D7C
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
+    color: #212D7C
 }
-.navbar-expand-lg .navbar-nav .nav-item.active .nav-link:before{
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link:before {
     width: 100%;
 }
-.navbar-expand-lg .navbar-nav .nav-link:before{
+
+.navbar-expand-lg .navbar-nav .nav-link:before {
     content: "";
     width: 0;
     height: 1px;
     background-color: #212D7C;
-    bottom:0;
+    bottom: 0;
     left: 0;
     position: absolute;
 }
-.navbar-expand-lg .navbar-collapse{
+
+.navbar-expand-lg .navbar-collapse {
     justify-content: center;
 }
+
 .hero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,15 +203,13 @@ padding:0 15px
     margin-top: -52px;
     margin-bottom: 0;
     height: 105px;
-    overflow: hidden;
 }
 
 .checkForm .form-group {
     margin-top: 20px;
     text-align: center;
-    padding-bottom: 22px;
     margin-bottom: 0;
-    height: 100%;
+    height: calc(100% - 20px)
 }
 
 .borderedFormgroup {
@@ -283,6 +296,11 @@ padding:0 15px
 .nopadding {
     padding: 0;
     margin: 0;
+    height: 100%;
+}
+
+.checkForm .row {
+    height: 100%;
 }
 
 .checkBtn {
@@ -629,15 +647,19 @@ padding:0 15px
     opacity: .5;
 }
 
-.guestCar .owl-stage-outer,.serviceCar .owl-stage-outer {
+.guestCar .owl-stage-outer,
+.serviceCar .owl-stage-outer,
+.aboutSliderSec .owl-stage-outer {
     overflow: visible;
 }
 
-.guestCar .owl-stage-outer .owl-item,.serviceCar .owl-stage-outer .owl-item {
+.guestCar .owl-stage-outer .owl-item,
+.serviceCar .owl-stage-outer .owl-item {
     opacity: 0;
 }
 
-.guestCar .owl-stage-outer .owl-item.active,.serviceCar .owl-stage-outer .owl-item.active {
+.guestCar .owl-stage-outer .owl-item.active,
+.serviceCar .owl-stage-outer .owl-item.active {
     opacity: 1;
 }
 
@@ -670,7 +692,7 @@ padding:0 15px
 
 }
 
- .owl-dot.active {
+.owl-dot.active {
     width: 31px;
     background-color: #212D7C;
     transition: all .5s;
@@ -852,10 +874,12 @@ footer {
     font-weight: 500;
     color: #808080;
 }
-.services{
+
+.services {
     padding-bottom: 90px;
     overflow: hidden;
 }
+
 .services .sectionTitle {
     margin-bottom: 74px;
 }
@@ -866,7 +890,7 @@ footer {
     width: 80%;
     height: 520px;
     margin: auto;
-    margin-top:-30px
+    margin-top: -30px
 }
 
 .servicesCarItem img {
@@ -880,22 +904,179 @@ footer {
     border-radius: 12px;
     height: 460px;
 }
-.serviceCar .owl-nav{
+
+.serviceCar .owl-nav {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
 }
-.serviceCar.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+
+.serviceCar.owl-carousel .owl-nav .owl-next,
+.serviceCar.owl-carousel .owl-nav .owl-prev {
     background-color: transparent;
-    color:black;
-    border:0;
+    color: black;
+    border: 0;
     font-size: 15px;
     position: absolute;
     left: 18px;
 
 }
-.serviceCar.owl-carousel .owl-nav .owl-next{
+
+.serviceCar.owl-carousel .owl-nav .owl-next {
     left: auto;
     right: 18px;
+}
+
+/****/
+.innerHeroText h1 {
+    text-transform: uppercase;
+}
+
+.ourStorySec {
+    padding-top: 75px;
+    padding-bottom: 140px;
+}
+
+.ourStorySec span {
+    font-weight: 500;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 16px;
+    ;
+    color: #212D7C;
+
+}
+
+.ourStoryText h5 {
+    font-weight: 600;
+    font-size: 3.875em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+
+.ourStoryText p {
+    font-weight: 400;
+    font-size: 1.125em;
+    color: #808080;
+}
+
+.aboutCarIrem {
+    width: 100%;
+    height: 520px;
+}
+
+.aboutCarIrem img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.aboutCar .owl-item.center .aboutCarIrem {
+    width: 90%;
+    margin: auto;
+}
+
+.aboutCar .owl-nav {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.aboutCar.owl-carousel .owl-nav .owl-next,
+.aboutCar.owl-carousel .owl-nav .owl-prev {
+    background-color: transparent;
+    color: black;
+    border: 0;
+    font-size: 15px;
+    margin: 0 15px
+}
+
+.aboutSliderSec {
+    padding-bottom: 60px;
+}
+
+.aboutchoose {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.aboutSectionTitle h4 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.aboutSectionTitle {
+    margin-bottom: 54px;
+}
+
+.whyBox {
+    border-radius: 12px;
+    height: 217px;
+    margin-bottom: 30px;
+    transition: all .5;
+    padding: 24px
+}
+
+.whyBox:hover,
+.awardBox:hover {
+    box-shadow: 0px 60px 80px rgba(33, 45, 124, 0.08);
+    transition: all .5;
+}
+
+.whyIcon {
+    margin-bottom: 16px;
+}
+
+.whyIcon i {
+    font-size: 30px;
+    color: #212D7C
+}
+
+.whyBox h5 {
+    font-weight: 500;
+    font-size: 1.75em;
+    color: #000000;
+    margin-bottom: 19px;
+}
+
+.whyBox p {
+    font-weight: 400;
+    font-size: .875em;
+    color: #808080;
+}
+
+.AwardsSec {
+    padding-top: 50px;
+    padding-bottom: 73px;
+}
+
+.awardBox {
+    height: 358px;
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.awrdIcon {
+    margin: auto;
+    width: 144px;
+    margin-bottom: 28px;
+    height: 144px;
+}
+.awrdIcon img{
+    object-fit: cover;
+}
+
+.awardBox h5 {
+    color: #000000;
+    font-size: 1.5em;
+    margin-bottom: 18px;
+}
+.awardBox p{
+    color: #808080;
+    font-size: .875em;
+    font-weight: 500;
 }
