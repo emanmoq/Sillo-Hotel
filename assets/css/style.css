@@ -689,7 +689,7 @@ form {
     outline: 0;
     border: 0;
     box-shadow: none;
-
+    padding: 0
 }
 
 .owl-dot.active {
@@ -985,8 +985,8 @@ footer {
     margin-top: 40px;
 }
 
-.aboutCar.owl-carousel .owl-nav .owl-next,
-.aboutCar.owl-carousel .owl-nav .owl-prev {
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
     background-color: transparent;
     color: black;
     border: 0;
@@ -1066,7 +1066,8 @@ footer {
     margin-bottom: 28px;
     height: 144px;
 }
-.awrdIcon img{
+
+.awrdIcon img {
     object-fit: cover;
 }
 
@@ -1075,8 +1076,239 @@ footer {
     font-size: 1.5em;
     margin-bottom: 18px;
 }
-.awardBox p{
+
+.awardBox p {
     color: #808080;
     font-size: .875em;
     font-weight: 500;
+}
+
+.servicestopSec {
+    background: #F9F9F9;
+    padding-top: 97px;
+    padding-bottom: 81px;
+}
+
+.serviceSecIcon {
+    font-size: 35px;
+    color: #212D7C;
+    text-align: center;
+    margin-bottom: 19px;
+    height: 30px;
+}
+
+.serviceSecBox {
+    margin-bottom: 55px;
+}
+
+.serviceSecBox h3 {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #212D7C;
+    text-align: center;
+}
+
+.servicesBody {
+    padding-top: 103px;
+    padding-bottom: 120px;
+}
+
+.serviceSliderItem {
+    position: relative;
+    width: 100%;
+
+}
+
+.serviceSliderItem::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+.serviceCol {
+    padding: 0;
+}
+
+.serviceSlider .owl-dots {
+    margin-top: -20px;
+    position: relative;
+    z-index: 22;
+    text-align: center;
+}
+
+.serviceSlider .owl-dots .owl-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.serviceSlider .owl-dots .owl-dot.active {
+    width: 25px;
+    border-radius: 3px;
+}
+
+.serviceSlider .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.serviceSlider .owl-nav button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white !important;
+    z-index: 99;
+}
+
+.serviceSlider .owl-nav button.owl-next {
+    left: auto;
+    right: 0;
+}
+
+.serviceSliderItem img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.servicesSideDetailsHeader {
+    display: flex;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #CACACA;
+    margin-bottom: 21px;
+}
+
+.servicesSideDetailsHeader .serviceIcon {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.servicesSideDetailsHeader h4 {
+    align-self: center;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.serviceSideDetails {
+    margin-top: 90px;
+}
+
+.firstSide {
+    float: right;
+}
+
+.secondSide {
+    float: left;
+}
+
+.serviceSideDetails {
+    width: 65%;
+
+}
+
+.serviceSideDetails p {
+    font-weight: 500;
+    font-size: 1em;
+    color: #808080;
+    margin-bottom: 41px;
+}
+
+.serviceDetailsBtn {
+    width: 230px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #212D7C;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.14em;
+    text-transform: uppercase;
+    color: #212D7C;
+
+}
+
+.serviceDetailsBtn:hover {
+    background-color: #212D7C;
+    color: white;
+}
+
+.serviceDetailsBtn span:last-child {
+    margin-left: 11px;
+
+}
+
+.secondSide .servicesSideDetailsHeader .serviceIcon {
+    margin-right: 0;
+    margin-left: 24PX;
+}
+
+.secondSide .serviceDetailsBtn {
+    float: right;
+}
+
+.servicePAgeForm {
+    padding-top: 120px
+}
+
+.servicePAgeForm h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 12px;
+    color: #212D7C;
+}
+
+.servicePAgeForm p {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 19px;
+
+    text-align: center;
+    margin-bottom: 48px;
+    color: #808080;
+}
+
+.servicePAgeForm .form-control {
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid rgba(202, 202, 202, 0.6);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.servicePAgeForm .form-group {
+    margin-bottom: 20px;
+}
+
+.servicePAgeForm .form-control::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #808080;
+}
+
+.sendFormBtn {
+    margin-top: 20px;
+    height: 51px;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #212D7C;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    border: 1px solid #212D7C;
+}
+.sendFormBtn:hover{
+    background-color: #F9F9F9;
+    color:#212D7C
 }

@@ -52,5 +52,16 @@ jQuery(function ($) {
         }
 
     });
+    $(".serviceSlider").owlCarousel({
+        nav: true,
+        dots: true,
+        loop: true,
+        margin:0,
+        items:1,
+        center: true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+
+
+    });
 });
 
