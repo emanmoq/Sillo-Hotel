@@ -196,13 +196,16 @@ form {
     padding-bottom: 43px;
 }
 
-.checkForm {
+.checkForm,
+.roomcheckForm {
     background: #FFFFFF;
     box-shadow: 0px 16px 46px rgba(0, 0, 0, 0.06);
     border-radius: 0px 20px;
     margin-top: -52px;
     margin-bottom: 0;
     height: 105px;
+    position: relative;
+
 }
 
 .checkForm .form-group {
@@ -1308,7 +1311,366 @@ footer {
     color: #F9F9F9;
     border: 1px solid #212D7C;
 }
-.sendFormBtn:hover{
+
+.sendFormBtn:hover {
     background-color: #F9F9F9;
-    color:#212D7C
+    color: #212D7C
+}
+
+.roomBox {
+    border-radius: 10px;
+    height: 410px;
+    margin-bottom: 24px;
+}
+
+.roomBoxImg {
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    height: 293px;
+}
+
+.roomBoxImg:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.roomBoxDesc {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.roomBoxHeader {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+
+.roomBoxHeader .pricePerNight {
+    display: inline-flex;
+    background: #FFFFFF;
+    border: 2px solid #212D7C;
+    border-radius: 4px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: .875em;
+    color: #212D7C;
+    width: 95px;
+    height: 32px;
+}
+
+.roomBoxHeader .pricePerNight span {
+    align-self: center;
+}
+
+.roomBoxHeader h4 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #000000;
+}
+
+.roomBoxDetails {
+    background-color: white;
+}
+
+.roomBoxDetails span i {
+    color: #063C43;
+}
+
+.roomBoxDetails span span {
+    color: #808080
+}
+
+.roomBoxDetails span {
+    margin-right: 32px;
+}
+
+.roomBoxDetails span {
+    font-size: .875em;
+}
+
+.roomsPageBody {
+    padding-top: 43px;
+    padding-bottom: 72px;
+}
+
+.roomsPageBody .aboutSectionTitle {
+    text-align: left;
+}
+
+.pagination {
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.page-link {
+    font-weight: 500;
+    font-size: 24px;
+    color: #CACACA;
+    border: 0;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    align-self: center;
+    display: flex;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    font-size: 14px;
+    background: #F9F9F9;
+    color: #212D7C
+}
+
+.page-item.disabled .page-link {
+    background: #F9F9F9;
+    color: #CACACA;
+}
+
+.page-link i {
+    align-self: center;
+}
+
+.page-item.active .page-link {
+    color: #212D7C
+}
+
+.page-item {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 24px;
+}
+
+.page-item.active .page-link {
+    background-color: transparent;
+    border: 0
+}
+
+.checkroomBox {
+    background: #FFFFFF;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    margin-right: 25px;
+    height: 56px;
+}
+
+.checkroomBox .form-group {
+    align-self: center;
+    border-right: 1px solid #CACACA;
+    margin-bottom: 0;
+    padding: 0 17px;
+    display: flex;
+    height: 100%;
+}
+
+.calenderIcon {
+    align-self: center;
+    color: #808080;
+    margin-right: 16px;
+}
+
+.checkroomBox .datepicker {
+    border: 0;
+    width: 100px;
+    background-color: transparent;
+    font-size: 1.125em;
+    color: black;
+    font-weight: 500;
+}
+
+.roomcheckForm {
+    height: auto;
+    padding: 36px
+}
+
+.checkroomBox .form-group:last-child {
+    border-right: 0;
+}
+
+.checkroomBox .form-group label {
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #808080;
+    display: inline-block;
+    margin-right: 30px;
+    align-self: center;
+}
+
+.roomplusMinus {
+    display: inline-flex;
+}
+
+.roomcheckForm .roomplusMinus .form-control {
+    align-self: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 4px;
+    align-self: center;
+    text-align: center;
+}
+
+.roomcheckForm .roomplusMinus input.form-control {
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+}
+
+.roomcheckForm .roomplusMinus button.form-control {
+    background: #F9F9F9;
+    color: #5B5B5B;
+    font-size: 12px;
+}
+
+.roomcheckForm .datepicker {
+    margin: 0;
+}
+
+.checkRoomBtn {
+    display: inline-flex;
+    background: #FFFFFF;
+    border: 1px solid #212D7C;
+    border-radius: 10px;
+    width: 233px;
+    height: 56px;
+
+    color: #212D7C;
+}
+
+.checkRoomBtn:hover {
+    background-color: #212D7C;
+    color: white;
+}
+
+.checkFilterTop {
+    margin-bottom: 18px;
+}
+
+.optionsTag {
+    display: inline-flex;
+    height: 34px;
+    background: #F9F9F9;
+    border-radius: 8px;
+    padding: 0 16px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: .875em;
+    text-align: center;
+    color: #808080;
+    position: relative;
+    border: 1px solid transparent;
+    margin-right: 11px;
+}
+
+.optionsTag span {
+    align-self: center;
+}
+
+.optionsTag i {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 17px;
+    background-color: white;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    color: #CACACA;
+    display: none;
+
+}
+
+.moreOptionsBtn {
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    color: #063C43;
+    position: relative;
+}
+
+.moreOptionsBtn:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 17px;
+    content: "";
+    border-top: 7px solid #212D7C;
+    border-right: 7px solid transparent;
+    border-bottom: 0;
+    border-left: 7px solid transparent;
+    align-self: center;
+}
+
+.optionsTag:hover i {
+    display: block;
+}
+
+.optionsTag:hover {
+    border: 1px solid #CACACA;
+}
+
+.checktext {
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 21px;
+    color: #808080;
+    align-self: center;
+    margin: 0;
+}
+
+.filterModal {
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 20px 36px;
+    position: absolute;
+    z-index: 9999;
+    width: 566px;
+    margin-top: 13px
+}
+
+.filterModal h5 {
+    font-weight: 600;
+    font-size: 1.125em;
+
+    color: #000000;
+    margin-bottom: 44px;
+
+}
+
+.ui-widget.ui-widget-content {
+    height: 8px;
+    background: #EDEDED;
+    border-radius: 4px;
+    width: 375px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    background: #212D7C;
+    border-radius: 4px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #6A72A7;
 }

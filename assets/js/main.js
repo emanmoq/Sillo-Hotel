@@ -63,5 +63,19 @@ jQuery(function ($) {
 
 
     });
+    $(".closeTag").click(function(){
+        $(this).parent(".optionsTag").css("display","none")
+    })
+    $("#price-range").slider({
+        step: 10,
+        range: true,
+        min: 50,
+        max: 500,
+        values: [100, 200],
+    
+        slide: function (event, ui) { $(".priceRange").val(ui.values[0] + " - " + ui.values[1]); }
+      });
+      $(".min").append($("#price-range").slider("values", 0) )
+      $(".max").append($("#price-range").slider("values", 1) )
 });
 

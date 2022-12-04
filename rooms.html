@@ -91,43 +91,245 @@
     </div>
     <div class="checkSec">
         <div class="container justify-content-center">
-          <div class="row justify-content-center">
-            <div class="col-md-9">
-              <form class="checkForm">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="form-group borderedFormgroup">
-                      <label for=""><i class="far fa-calendar"></i>Check in </label>
-                      <input type="text" class="datepicker" placeholder="22/10/2020">
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group borderedFormgroup">
-                      <label for=""><i class="far fa-calendar"></i>Check in </label>
-                      <input type="text" class="datepicker" placeholder="22/10/2020">
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for=""><i class="fa fa-user"></i>Guest </label>
-                      <select name="" id="" class="select">
-                        <option value="">1 person</option>
-                        <option value="">2 person</option>
-                        <option value="">3 person</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-3 nopadding">
-                    <a href="javaScript" type="submit" class="btn checkBtn"><span>Check Availability</span> </a>
-                  </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <form class="roomcheckForm">
+                        <div class="checkFilterTop">
+                            <div class="checkroomBox">
+                                <div class="form-group">
+                                    <i class="fa-solid fa-calendar-days calenderIcon"></i>
+                                    <input type="text" class="datepicker" placeholder="22/10/2020">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa-solid fa-calendar-days calenderIcon"></i>
+                                    <a href="javaScript:;" class="checktext"><span>Check-out </span></a>
+                                </div>
+                            </div>
+                            <div class="checkroomBox">
+                                <div class="form-group qty-plus-minus">
+                                    <label for="">Adults</label>
+                                    <div class="roomplusMinus">
+                                        <button type="button" class="form-control btn-number btnminus" data-type="minus"
+                                            data-field="quantity">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                        <input id="input-quantity" type="text" name="quantity" value="5"
+                                            class="form-control  input-number " disabled>
+                                        <input type="hidden" name="product_id" value="43">
+                                        <button type="button" class="form-control  btn-number btnplus" data-type="plus"
+                                            data-field="quantity">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group qty-plus-minus">
+                                    <label for="">Children</label>
+                                    <div class="roomplusMinus">
+                                        <button type="button" class="form-control btn-number btnminus" data-type="minus"
+                                            data-field="quantity">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                        <input id="input-quantity" type="text" name="quantity" value="5"
+                                            class="form-control  input-number " disabled>
+                                        <input type="hidden" name="product_id" value="43">
+                                        <button type="button" class="form-control  btn-number btnplus" data-type="plus"
+                                            data-field="quantity">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javaScript:;" class="btn checkRoomBtn"><span>Check Availability</span></a>
+                        </div>
+                        <div class="checkFilterBottom">
+                            <a href="javaScript:;" class="moreOptionsBtn btn dropdown">
+                                More Options
+                            </a>
+                            <a href="javaScript:;" class="optionsTag"><span>2 Beds </span><i
+                                    class=" closeTag fa-regular fa-circle-xmark"></i></a>
+                            <a href="javaScript:;" class="optionsTag"><span>40 - 60 $/night </span><i
+                                    class=" closeTag fa-regular fa-circle-xmark"></i></a>
+
+                            <a href="javaScript:;" class="optionsTag"><span>2 baths </span><i
+                                    class=" closeTag fa-regular fa-circle-xmark"></i></a>
+
+
+                        </div>
+                        <div class="filterModal">
+                            <h5>Price</h5>
+                            <div class="filterContent">
+                                <div id="price-range" class="slider"></div>
+                                <span class="min"></span>
+                                <span class="max"></span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
-    <div class="servicesBody">
-  
+
+    </div>
+    <div class="roomsPageBody">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aboutSectionTitle ">
+                        <h4> Discover Our Rooms</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="roomBox">
+                        <div class="roomBoxImg">
+                            <img src="assets/images/room1.png" alt="">
+                        </div>
+                        <div class="roomBoxDesc">
+                            <div class="roomBoxHeader">
+                                <h4>
+                                    Modern room
+                                </h4>
+                                <span class="pricePerNight"><span>$100/night</span></span>
+                            </div>
+                            <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                        class="fa-solid fa-hands-holding-child"></i><span>2
+                                        Children</span></span>
+                                <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                        ft2</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="roomBox">
+                        <div class="roomBoxImg">
+                            <img src="assets/images/room1.png" alt="">
+                        </div>
+                        <div class="roomBoxDesc">
+                            <div class="roomBoxHeader">
+                                <h4>
+                                    Modern room
+                                </h4>
+                                <span class="pricePerNight"><span>$100/night</span></span>
+                            </div>
+                            <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                        class="fa-solid fa-hands-holding-child"></i><span>2
+                                        Children</span></span>
+                                <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                        ft2</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="roomBox">
+                        <div class="roomBoxImg">
+                            <img src="assets/images/room1.png" alt="">
+                        </div>
+                        <div class="roomBoxDesc">
+                            <div class="roomBoxHeader">
+                                <h4>
+                                    Modern room
+                                </h4>
+                                <span class="pricePerNight"><span>$100/night</span></span>
+                            </div>
+                            <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                        class="fa-solid fa-hands-holding-child"></i><span>2
+                                        Children</span></span>
+                                <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                        ft2</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="roomBox">
+                        <div class="roomBoxImg">
+                            <img src="assets/images/room1.png" alt="">
+                        </div>
+                        <div class="roomBoxDesc">
+                            <div class="roomBoxHeader">
+                                <h4>
+                                    Modern room
+                                </h4>
+                                <span class="pricePerNight"><span>$100/night</span></span>
+                            </div>
+                            <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                        class="fa-solid fa-hands-holding-child"></i><span>2
+                                        Children</span></span>
+                                <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                        ft2</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="roomBox">
+                        <div class="roomBoxImg">
+                            <img src="assets/images/room1.png" alt="">
+                        </div>
+                        <div class="roomBoxDesc">
+                            <div class="roomBoxHeader">
+                                <h4>
+                                    Modern room
+                                </h4>
+                                <span class="pricePerNight"><span>$100/night</span></span>
+                            </div>
+                            <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                        class="fa-solid fa-hands-holding-child"></i><span>2
+                                        Children</span></span>
+                                <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                        ft2</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="roomBox">
+                        <div class="roomBoxImg">
+                            <img src="assets/images/room1.png" alt="">
+                        </div>
+                        <div class="roomBoxDesc">
+                            <div class="roomBoxHeader">
+                                <h4>
+                                    Modern room
+                                </h4>
+                                <span class="pricePerNight"><span>$100/night</span></span>
+                            </div>
+                            <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                        class="fa-solid fa-hands-holding-child"></i><span>2
+                                        Children</span></span>
+                                <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                        ft2</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <nav aria-label="Page navigation  justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a class="page-link" href="#"><i
+                                        class="fa fa-chevron-left"></i></a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="container">
@@ -223,6 +425,52 @@
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $('.btn-number').click(function (e) {
+            e.preventDefault();
+            var fieldName = $(this).attr('data-field');
+            var type = $(this).attr('data-type');
+            var input = $(this).closest(".qty-plus-minus").find("input[name='" + fieldName + "']");
+            var currentVal = parseInt(input.val());
+            if (!isNaN(currentVal)) {
+                if (type == 'minus') {
+                    var minValue = parseInt(input.attr('min'));
+                    if (!minValue) minValue = 1;
+                    if (currentVal > minValue) {
+                        input.val(currentVal - 1).change();
+
+                    }
+                    if (parseInt(input.val()) == minValue) {
+                        $(this).attr('disabled', true);
+                        $(this).addClass('disabled');
+                    }
+                    else {
+                        $(this).removeClass('disabled');
+                        $(this).attr('disabled', false);
+                    }
+
+                } else if (type == 'plus') {
+                    var maxValue = parseInt(input.attr('max'));
+                    if (!maxValue) maxValue = 999;
+                    if (currentVal < maxValue) {
+                        input.val(currentVal + 1).change();
+
+                    }
+                    if (parseInt(input.val()) == maxValue) {
+                        $(this).attr('disabled', true);
+                        $(this).addClass('disabled');
+                    }
+                    else {
+                        $(this).removeClass('disabled');
+                        $(this).attr('disabled', false);
+                    }
+
+                }
+            } else {
+                input.val(0);
+            }
+        });
+    </script>
 
 </body>
 
