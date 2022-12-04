@@ -1639,7 +1639,8 @@ footer {
     position: absolute;
     z-index: 9999;
     width: 566px;
-    margin-top: 13px
+    margin-top: 13px;
+    display: none;
 }
 
 .filterModal h5 {
