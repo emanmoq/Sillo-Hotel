@@ -65,7 +65,12 @@ jQuery(function ($) {
     });
     $(".closeTag").click(function(){
         $(this).parent(".optionsTag").css("display","none")
+    });
+    $(".moreOptionsBtn").click(function(){
+        $(".filterModal").toggle()
     })
+    
+    
     $("#price-range").slider({
         step: 10,
         range: true,
