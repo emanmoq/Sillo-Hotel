@@ -73,9 +73,10 @@ jQuery(function ($) {
         max: 500,
         values: [100, 200],
     
-        slide: function (event, ui) { $(".priceRange").val(ui.values[0] + " - " + ui.values[1]); }
+        slide: function (event, ui) { $(".min").html("$" + ui.values[0]);
+        $(".max").html("$" + ui.values[1]); }
       });
-      $(".min").append($("#price-range").slider("values", 0) )
-      $(".max").append($("#price-range").slider("values", 1) )
+      $(".min").append("$" + $("#price-range").slider("values", 0) )
+      $(".max").append("$" + $("#price-range").slider("values", 1) )
 });
 
