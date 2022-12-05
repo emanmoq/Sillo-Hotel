@@ -1993,10 +1993,12 @@ footer {
 
 .booking-tab-content {
     padding-top: 50px;
+  
+}
+.bookingForm .row{
     padding-left: 22px;
     padding-right: 22px;
 }
-
 .bookingtabs.nav-tabs .nav-link.active {
     border-bottom: 4px solid #212D7C;
     color: #212D7C
@@ -2031,9 +2033,7 @@ footer {
     margin: 0;
 
 }
-.bookingForm{
-    margin-bottom: 32px;
-}
+
 .dateBox .datepicker::placeholder{
     font-weight: 500;
 font-size: 18px;
@@ -2080,6 +2080,8 @@ border-radius: 0px 0px 12px 12px;
 padding:33px 24px;
 display: flex;
 justify-content: space-between;
+margin-top: 32px;
+
 }
 .roomsideBookingFooter span{
     font-weight: 500;
@@ -2117,4 +2119,35 @@ border: 1px solid #212D7C;;
 }
 .bookingBtn:hover span{
     color: #212D7C;
+}
+.calendermeaning{
+    margin-top: 25px;
+}
+.squre{
+   width: 36px;
+    height: 36px;
+    border-radius: 6px;;
+    background: #FFFFFF;
+    align-self: center;
+border: 1px solid #CACACA;
+
+}
+.blueSq{
+   
+    background: #212D7C;
+}
+.calendermeaning li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 34px;
+}
+.calendermeaning span{
+    font-weight: 500;
+font-size: 1.125em;
+color: #000000;
+align-self: center;
+margin-left: 12px;
+}
+.binkSq{
+    background-color:  rgba(189, 24, 13, 0.12);;
 }
