@@ -52,6 +52,25 @@ jQuery(function ($) {
         }
 
     });
+    $(".roomsTypesSlider").owlCarousel({
+        nav: false,
+        dots: true,
+        loop: true,
+        margin:10,
+              navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+        responsive: {
+            0: {
+                items:1,
+            },
+            700: {
+                items:2,
+            },
+            900: {
+                items:3,
+            }
+        }
+
+    });
     $(".serviceSlider").owlCarousel({
         nav: true,
         dots: true,
@@ -67,7 +86,7 @@ jQuery(function ($) {
         $(this).parent(".optionsTag").css("display","none")
     });
     $(".moreOptionsBtn").click(function(){
-        $(".filterModal").toggle()
+        $(".filterModal").slideToggle()
     })
     
     
