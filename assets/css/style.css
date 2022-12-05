@@ -843,10 +843,12 @@ footer {
     font-size: 1em;
     font-weight: 400;
 }
-.servicesList{
+
+.servicesList {
     position: relative;
     z-index: 999;
 }
+
 .servicesList li {
     display: flex;
     border-radius: 12px;
@@ -1324,6 +1326,7 @@ footer {
     border-radius: 10px;
     height: 410px;
     margin-bottom: 24px;
+    background-color: white;
 }
 
 .roomBoxImg {
@@ -1674,7 +1677,8 @@ footer {
     background: #212D7C;
     border-radius: 4px;
 }
-.ui-datepicker table{
+
+.ui-datepicker table {
     background-color: white;
 }
 
@@ -1764,11 +1768,11 @@ footer {
 }
 
 .customRadioContainer .checkBoxmark:after {
-    left: 5px;
-    top: 1px;
+    left: 6px;
+    top: 2px;
     width: 6px;
     height: 12px;
-    border: solid rgba(33, 45, 124, 0.68);
+    border: solid white;
     border-radius: 0;
     background-color: transparent;
     border-width: 0 3px 3px 0;
@@ -1778,7 +1782,8 @@ footer {
 }
 
 .customRadioContainer input:checked~.checkBoxmark {
-    border: 2px solid #212D7C;
+    border: 1px solid #212D7C;
+    background-color: #212D7C
 }
 
 .filterContent .filterListPadding {
@@ -1881,36 +1886,235 @@ footer {
 .topDetailsImg {
     margin-bottom: 18px;
 }
-.roomOverView{
-    margin-top: 101px;
-}
+
 .roomPageDetailsInnerTitle {
     font-size: 1.5em;
     font-weight: 600;
     color: #000000;
     margin-bottom: 32px;
 }
-.roomOverView p{
+
+.roomOverView p {
     font-weight: 500;
-font-size: 1em;
-opacity: .5;
-margin-bottom: 14px;
+    font-size: 1em;
+    opacity: .5;
+    margin-bottom: 14px;
 }
-.roomOverView{
+
+.roomOverView {
     padding-bottom: 14px;
     border-bottom: 1px solid #CACACA;
-margin-bottom: 80px;
+    margin-bottom: 80px;
 }
+
 .FreeAmenitiesSec .serviceSecIcon {
+    color: black
+}
+
+.FreeAmenitiesSec .serviceSecBox h3 {
+    color: black
+}
+
+.roompagedetailsSlider {
+    background-color: #F9F9F9;
+    ;
+    padding: 44px 0
+}
+
+.roomDetailsCont {
+    padding: 44px 0;
+}
+
+.fc .fc-button {
+    background-color: transparent;
+    border: 0
+}
+
+.fc .fc-button .fc-icon {
+    color: black
+}
+
+.fc .fc-button:hover {
+    background-color: transparent;
+    border: 0;
+
+}
+
+.calenderCont {
+    padding-top: 46px;
+    background: #FFFFFF;
+    /* stoke */
+    padding-bottom: 50px;
+    border: 1.48815px solid #CACACA;
+    border-radius: 12px;
+}
+
+.fc .fc-toolbar-title {
+    margin-left: 18px;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.roomsideBooking {
+    background: #FFFFFF;
+    overflow: hidden;
+    border: 1px solid #CACACA;
+    border-radius: 12px;
+    padding-top: 22px
+}
+
+.roomsDetailsImages {
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
+.bookingtabs.nav-tabs .nav-link {
+    border: 0;
+    text-align: center;
+    width: 50%;
+    padding: 0;
+    padding-bottom: 22px;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 1.25em;
+    text-transform: uppercase;
+
+    /* body text1 */
+
+    color: #808080;
+
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #CACACA;
+}
+
+.booking-tab-content {
+    padding-top: 50px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.bookingtabs.nav-tabs .nav-link.active {
+    border-bottom: 4px solid #212D7C;
+    color: #212D7C
+}
+
+.dateBox i{
+    color: #808080;
+    margin-right: 18px;
+    align-self: center;
+}
+.dateBox{
+    position: relative;
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    height: 52px;
+}
+.bookingForm .form-group{
+    margin-bottom: 40px;
+}
+.bookingForm .selectric-wrapper{
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    height: 52px;
+    float: none;
+}
+.dateBox .datepicker{
+    border:0;
+    align-self: center;
+    width: 60%;
+    margin: 0;
+
+}
+.bookingForm{
+    margin-bottom: 32px;
+}
+.dateBox .datepicker::placeholder{
+    font-weight: 500;
+font-size: 18px;
 color:black
 }
-.FreeAmenitiesSec .serviceSecBox h3{
-    color:black
+.bookingForm .selectric .button{
+    font-size: 1.115em;
+    color: #000000;
+    top:10px
 }
-.roompagedetailsSlider{
-    background-color:  #F9F9F9;;
-    padding:44px 0
+.bookingForm .selectric .label,.bookingForm  .selectric-items li{
+    font-weight: 600;
+font-size: 1.25em;
+color: #000000;
 }
-.roomDetailsCont{
-    padding:44px 0:
+.sideServices  li{
+    padding: 18px 0; 
+    border-bottom: 1px solid #EBEBEB;
+}
+.sideServices span{
+    float: right;
+    font-weight: 500;
+font-size: 1.125em;
+
+color: #000000;
+}
+.sideServices  li:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.sideServices {
+    margin-bottom: 60px;
+}
+.bookingFormLabel{
+    display: block;
+    height: 23px;
+}
+.sideServices li label{
+    float: left;
+}
+.roomsideBookingFooter{
+    background: #F9F9F9;
+border-radius: 0px 0px 12px 12px;
+padding:33px 24px;
+display: flex;
+justify-content: space-between;
+}
+.roomsideBookingFooter span{
+    font-weight: 500;
+font-size: 1em;
+color: #808080;
+margin-bottom: 4px;
+}
+.roomsideBookingFooter{
+    align-self: center;
+}
+.roomsideBookingFooter h6{
+    font-weight: 600;
+font-size: 2.25em;
+color: #000000;
+
+}
+.bookingBtn{
+    background: #212D7C;
+border-radius: 8px;
+Width:224px;
+Height:66px;
+font-weight: 700;
+font-size: 1.125em;
+text-transform: uppercase;
+color: #FFFFFF;
+border: 1px solid #212D7C;;
+}
+.bookingBtn span{
+    color:white;
+    margin: 0;
+}
+.bookingBtn:hover{
+    background-color: transparent;
+   
+}
+.bookingBtn:hover span{
+    color: #212D7C;
 }

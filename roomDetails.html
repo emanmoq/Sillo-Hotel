@@ -17,6 +17,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/fullCalender.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -132,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="roomsPageBody roomDetailsCont">
+    <div class="roomsDetailsImages">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -157,7 +158,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+            </div>
+        </div>
+
+    </div>
+    <div class="roomDetailsCont">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
                     <div class="roomOverView">
                         <h4 class="roomPageDetailsInnerTitle">Over View</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor eu scelerisque elit elit eu
@@ -239,15 +247,157 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="roomPageDetailsInnerTitle">Free Amenities</h4>
+                                <div class="calenderCont">
+                                    <div id="calendar"></div>
+                                </div>
+
                             </div>
 
                         </div>
                     </div>
                 </div>
+                <div class="col-md-5">
+                    <div class="roomsideBooking">
+                        <nav>
+                            <div class="nav nav-tabs bookingtabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-Booking-tab" data-toggle="tab"
+                                    href="#nav-Booking" role="tab" aria-controls="nav-Booking" aria-selected="true">
+                                    Booking</a>
+                                <a class="nav-item nav-link" id="nav-RequestBooking-tab" data-toggle="tab"
+                                    href="#nav-RequestBooking" role="tab" aria-controls="nav-RequestBooking"
+                                    aria-selected="false">Request Booking
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content booking-tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-Booking" role="tabpanel"
+                                aria-labelledby="nav-Booking-tab">
+                                <form action="" class="bookingForm">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="bookingFormLabel "for="">Check In</label>
+                                                <div class="dateBox">
+                                                    <i class="fa-solid fa-calendar-days calenderIcon"></i>
+                                                    <input type="text" class="datepicker" placeholder="22/10/2020">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="bookingFormLabel" for="">Check Out</label>
+                                                <div class="dateBox">
+                                                    <i class="fa-solid fa-calendar-days calenderIcon"></i>
+                                                    <input type="text" class="datepicker" placeholder="22/10/2020">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="" class="bookingFormLabel">Guests</label>
+                                                <select name="" id="" class="select">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="" class="bookingFormLabel">Guests</label>
+                                                <select name="" id="" class="select">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="bookingFormLabel" for="">Extra rate</label>
+                                                <select name="" id="" class="select">
+                                                    <option value="">Select a rate</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="" class="bookingFormLabel">  </label>
+                                                <select name="" id="" class="select">
+                                                    <option value="">Add an adult</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <select name="" id="" class="select">
+                                                    <option value="">Add a child</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <select name="" id="" class="select">
+                                                    <option value="">Add a bed</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="">Services</label>
+                                                <ul class="sideServices">
+                                                    <li class="clearfix">
+                                                        <label class="customRadioContainer">Serve breakfast
+                                                            <input type="checkbox" name="view">
+                                                            <span class="radiocheckmark checkBoxmark"></span>
+                                                        </label>
+                                                        <span>$10/day</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <label class="customRadioContainer">Serve dinner
+                                                            <input type="checkbox" name="view" checked>
+                                                            <span class="radiocheckmark checkBoxmark"></span>
+                                                        </label>
+                                                        <span>$10/day</span>
 
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <label class="customRadioContainer">Morning coffee
+                                                            <input type="checkbox" name="view">
+                                                            <span class="radiocheckmark checkBoxmark"></span>
+                                                        </label>
+                                                        <span>$10/day</span>
+                                                    </li>
+                                                    <li class="clearfix">
+                                                        <label class="customRadioContainer">Gym and Spa
+                                                            <input type="checkbox" name="view" >
+                                                            <span class="radiocheckmark checkBoxmark"></span>
+                                                        </label>
+                                                        <span>$10/day</span>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-RequestBooking" role="tabpanel"
+                                aria-labelledby="nav-RequestBooking-tab">...</div>
+                        </div>
+                        <div class="roomsideBookingFooter">
+                            <div class="bookingFooterTotal">
+                                <span>Total</span>
+                                <h6>$90</h6>
+                            </div>
+                            <a href="javaScript:;" class="bookingBtn btn"><span>Book Now</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
     <div class="roompagedetailsSlider">
         <div class="container">
@@ -257,6 +407,69 @@
                         <h4> Discover Our Rooms</h4>
                     </div>
                     <div class="roomsTypesSlider owl-carousel">
+                        <div class="roomBox">
+                            <div class="roomBoxImg">
+                                <img src="assets/images/room1.png" alt="">
+                            </div>
+                            <div class="roomBoxDesc">
+                                <div class="roomBoxHeader">
+                                    <h4>
+                                        Modern room
+                                    </h4>
+                                    <span class="pricePerNight"><span>$100/night</span></span>
+                                </div>
+                                <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                            class="fa-solid fa-hands-holding-child"></i><span>2
+                                            Children</span></span>
+                                    <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                    <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                            ft2</span></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roomBox">
+                            <div class="roomBoxImg">
+                                <img src="assets/images/v2.png" alt="">
+                            </div>
+                            <div class="roomBoxDesc">
+                                <div class="roomBoxHeader">
+                                    <h4>
+                                        Modern room
+                                    </h4>
+                                    <span class="pricePerNight"><span>$100/night</span></span>
+                                </div>
+                                <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                            class="fa-solid fa-hands-holding-child"></i><span>2
+                                            Children</span></span>
+                                    <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                    <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                            ft2</span></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roomBox">
+                            <div class="roomBoxImg">
+                                <img src="assets/images/v3.png" alt="">
+                            </div>
+                            <div class="roomBoxDesc">
+                                <div class="roomBoxHeader">
+                                    <h4>
+                                        Modern room
+                                    </h4>
+                                    <span class="pricePerNight"><span>$100/night</span></span>
+                                </div>
+                                <div class="favouritRoomDesc roomBoxDetails"><span><i
+                                            class="fa-solid fa-hands-holding-child"></i><span>2
+                                            Children</span></span>
+                                    <span><i class="fa-solid fa-user-tie"></i><span>2 Adults</span></span>
+                                    <span> <i class="fa-brands fa-square-font-awesome-stroke"></i><span>100
+                                            ft2</span></span>
+
+                                </div>
+                            </div>
+                        </div>
                         <div class="roomBox">
                             <div class="roomBoxImg">
                                 <img src="assets/images/room1.png" alt="">
@@ -377,51 +590,38 @@
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/fullcalender.js"></script>
+    <script src="https://unpkg.com/@fullcalendar/interaction@4.4.0/main.min.js"></script>
     <script>
-        $('.btn-number').click(function (e) {
-            e.preventDefault();
-            var fieldName = $(this).attr('data-field');
-            var type = $(this).attr('data-type');
-            var input = $(this).closest(".qty-plus-minus").find("input[name='" + fieldName + "']");
-            var currentVal = parseInt(input.val());
-            if (!isNaN(currentVal)) {
-                if (type == 'minus') {
-                    var minValue = parseInt(input.attr('min'));
-                    if (!minValue) minValue = 1;
-                    if (currentVal > minValue) {
-                        input.val(currentVal - 1).change();
 
-                    }
-                    if (parseInt(input.val()) == minValue) {
-                        $(this).attr('disabled', true);
-                        $(this).addClass('disabled');
-                    }
-                    else {
-                        $(this).removeClass('disabled');
-                        $(this).attr('disabled', false);
-                    }
 
-                } else if (type == 'plus') {
-                    var maxValue = parseInt(input.attr('max'));
-                    if (!maxValue) maxValue = 999;
-                    if (currentVal < maxValue) {
-                        input.val(currentVal + 1).change();
+        document.addEventListener('DOMContentLoaded', function () {
 
-                    }
-                    if (parseInt(input.val()) == maxValue) {
-                        $(this).attr('disabled', true);
-                        $(this).addClass('disabled');
-                    }
-                    else {
-                        $(this).removeClass('disabled');
-                        $(this).attr('disabled', false);
-                    }
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
 
-                }
-            } else {
-                input.val(0);
-            }
+                headerToolbar: {
+                    left: 'title',
+                    //  center: '',
+                    right: 'prev,next'
+                },
+                dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+                    'Thursday', 'Friday', 'Saturday'],
+                initialDate: '2022-09-12',
+                navLinks: true, // can click day/week names to navigate views
+                businessHours: true, // display business hours
+                editable: false,
+                selectable: false,
+                eventBackgroundColor: "rgba(118, 28, 51, .08)",
+
+            });
+
+
+
+            calendar.render();
         });
+
+
     </script>
 
 </body>
