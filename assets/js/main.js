@@ -103,9 +103,10 @@ jQuery(function ($) {
       $(".min").append("$" + $("#price-range").slider("values", 0) )
       $(".max").append("$" + $("#price-range").slider("values", 1) )
       $(".arrowdown").click(function(){
-        $(".showmoreDetailsSec").slideToggle();
+        $(this).parent().find(".showmoreDetailsSec").slideToggle();
         $(this).find("i").toggleClass("fa-angles-down fa-angles-up");
         $(this).toggleClass("arrowdown arrowUp");
+        $(this).parent().toggleClass("removePadding")
       })
 
     });

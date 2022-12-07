@@ -2192,13 +2192,17 @@ footer {
     border-radius: 12px;
     padding: 35px;
     position: relative;
+    margin-bottom: 100px;
+    transition: all .5s;
 }
+
 .arrowdown {
     position: absolute;
     top: 99%;
     left: 39%;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background-color:#F9F9F9; ;
+    background-color: #F9F9F9;
+    ;
     height: 40px;
     width: 138px;
     text-align: center;
@@ -2303,89 +2307,196 @@ footer {
     font-size: 1.125em;
     color: #000000;
 }
-.AvailabilitroomDet{
- background: #FFFFFF;
-    border-radius: 12px;;
+
+.AvailabilitroomDet {
+    background: #FFFFFF;
+    border-radius: 12px;
+    ;
     padding: 32px 67px;
     padding-bottom: 0;
     margin-bottom: 21px;
 }
-.showmoreDetailsSec{
+
+.showmoreDetailsSec {
     margin-top: 32px;
 }
-.AvailabilitroomDet i{
+
+.AvailabilitroomDet i {
     font-size: 20px;
-    color:#212D7C;
+    color: #212D7C;
     margin-right: 14px;
 }
-.AvailabilitroomDet span{
+
+.AvailabilitroomDet span {
     font-size: 1.125em;
-    color:#212D7C;
+    color: #212D7C;
     font-weight: 500;
 }
-.AvailabilitroomDet .col-md-4{
-margin-bottom: 43px;
+
+.AvailabilitroomDet .col-md-4 {
+    margin-bottom: 43px;
 }
 
-.zeroPaddingfirst{
-    padding-left:0
-}
-.zeroPaddingsecond{
-    padding-right:0
-}
-.avalabilityRoomdetailsImg{
+
+.avalabilityRoomdetailsImg {
     margin-bottom: 42px;
 }
-.roomamenitiesBox{
+
+.roomamenitiesBox {
     background-color: white;
-  border-radius: 12px;
-  padding: 36px 24px;
+    border-radius: 12px;
+    padding: 36px 24px;
 }
-.roomamenitiesBox h4{
+
+.roomamenitiesBox h4 {
     font-weight: 600;
-font-size: 1.5em;
-text-transform: uppercase;
-margin-bottom: 44px;
-color: #000000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+    color: #000000;
 }
-.roomamenitiesBox{
+
+.roomamenitiesBox {
     margin-bottom: 32px;
 }
-.roomamenitiesBox ul li{
-margin-bottom: 31px;
-font-weight: 500;
-font-size: 1.125em;
-color: #000000;
+
+.roomamenitiesBox ul li {
+    margin-bottom: 31px;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #000000;
 }
-.roomamenitiesBox ul li i{
+
+.roomamenitiesBox ul li i {
     color: #212D7C;
     margin-right: 10px;
     font-size: 12px;
 }
+
 .showmoreDetailsSec {
     display: none;
 }
-.showmoreDetailsSec .serviceDetailsBtn{
+
+.showmoreDetailsSec .serviceDetailsBtn {
     width: 100%;
     height: 72px;
 }
-.arrowUp{
-    background-color:transparent;
-    color:#130F26;
+
+.arrowUp {
+    background-color: transparent;
+    color: #130F26;
     width: 48px;
     height: 48px;
     background-color: transparent;
     border-radius: 50%;
     position: absolute;
     bottom: -64px;
-    left:46%;
+    left: 46%;
 }
-.showHideSec i{
-    animation: arrowAnimate 4s infinite ease-in;
+
+.showHideSec i {
+    animation: arrowAnimate 1s infinite ease-in;
     transition: all .5s;
 }
+
 @keyframes arrowAnimate {
 
-    from {margin-top:0}
-    to {margin-top:5px}
-  }
+    0% {
+        margin-top: 0px
+    }
+
+    25% {
+        margin-top: 4px
+    }
+
+    50% {
+        margin-top: 7px
+    }
+
+    75% {
+        margin-top: 4px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.removePadding {
+    padding-left: 0;
+    padding-right: 0;
+    transition: all .5s;
+}
+
+.avaiabilityBox .roomsideBooking {
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.06);
+}
+
+.contactSide {
+    background: #212D7C;
+    border-radius: 12px;
+    padding: 28px 36px;
+    color: white
+}
+
+.sideContatTitle h4 {
+    font-weight: 600;
+    font-size: 2.25em;
+    text-transform: uppercase;
+}
+
+.sideContatTitle {
+    margin-bottom: 45px;
+}
+
+.sideContatTitle span {
+    font-weight: 500;
+    font-size: 1.125em;
+}
+
+.contactPageBody {
+    padding-top: 14px;
+    padding-bottom: 70px;
+}
+
+.contactSide .footerList li a {
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+}
+
+.contactSide .socialIcons li a {
+    color: white
+}
+
+.contactContainer {
+    background-color: white;
+    padding: 28px;
+    box-shadow: 0px 60px 180px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.googlemap {
+    margin-top: 40px;
+}
+
+.contactFormTitle h4 {
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 1.75em;
+    color: #212D7C;
+    text-align: left;
+}
+
+.contactFormTitle span {
+    font-weight: 500;
+    font-size: 1em;
+    color: #808080;
+    text-align: left;
+}
+.contactFormTitle{
+    margin-bottom: 48px;
+}
+.contactForm {
+    padding:0
+}
